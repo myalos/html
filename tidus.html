@@ -1,0 +1,46 @@
+<!-- 	
+		author: myalos  
+		date  : 2021/9/14
+		description: 纯html写的博客页面,主要结构是大标题用center，每个部分用article
+					 学到article，center标签的使用，&nbsp;表示空格
+					 看了一下这个html的样子 感觉挺丑的，如果不居中 右边就空很大一块，如果居中，字体上下不对齐挺丑的
+					 不知道怎么用html来实现 代码块
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="referrer" content="no-referrer">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="myalos">
+	<meta name="description" content="datawhale matplotlib study note">
+	<title>matplotlib学习笔记</title>
+</head>
+<body>
+	<center>
+	<h1>matplotlib学习笔记</h1>
+	</center>
+	<center> 由于对机器学习和深度学习感兴趣，而matplotlib这个库是在机器学习和深度学习中必不可少的库，所以就参加了datawhale的matplotlib组队学习 </center>
+	<br/>
+<article>
+	<center><h2>第一回：Matplotlib初相识</h2></center>
+	<center><p><a href="https://datawhalechina.github.io/fantastic-matplotlib/%E7%AC%AC%E4%B8%80%E5%9B%9E%EF%BC%9AMatplotlib%E5%88%9D%E7%9B%B8%E8%AF%86/index.html#id1">学习资料链接</a>  &nbsp;&nbsp;&nbsp;     <a href="https://matplotlib.org/stable/Matplotlib.pdf">官方文档</a></p></center>
+	<br/>
+	<center><p><strong>matplotlib的安装</strong>： pip install matplotlib</p></center>
+	<center><p><strong>matplotlib的导入</strong>： import matplotlib.pyplot as plt</p></center>
+	<center><p><strong>简单的画图:</strong></p> </center>
+	<center><p><code>fig, ax = plt.subplots()  # 创建一个包含一个axes的figure</code></p></center>
+	<center><p><code>ax.plot([1, 2, 3, 4], [1, 4, 2, 3]);  # 绘制图像,两个数组元素个数要相同，前面数组是横坐标，后面是纵坐标 </code></p></center>
+	<center><img src="https://z3.ax1x.com/2021/09/14/4A6Iot.png" alt="4A6Iot.png" border="0" /></center>
+	<br/>
+	<center><p>四个层级: <strong>Figure Axes Axis Tick</strong>, 其中Figure对应的是整个显示界面，Axes对应的是一张图，在Axes上画图可以用Axes对象的plot方法，上面代码subplots函数返回的就是一个Figure对象和一个Axes对象</p></center>
+	<center><p><code>fig, (ax1, ax2) = plt.subplots(1, 2) # 这个是在一个Figure里面画两张图</code></p></center>
+	<center><p><strong>两种画图方法</strong> 一种是用Axes对象的plot方法来画，另一种是用plt来画,下面的是第一种画法的代码</p></center>
+	<center><img src="https://z3.ax1x.com/2021/09/14/4AfCM8.png" alt="4AfCM8.png" border="0"/> </center>
+</article>
+
+
+</body>
+</html>
+
